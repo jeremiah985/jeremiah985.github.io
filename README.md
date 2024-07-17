@@ -25,10 +25,10 @@ git clone https://github.com/jeremiah985/jeremiah985.github.io
 
 ## 网站更新维护记录：
 2024/7/17
-添加网站描述和个人介绍
-上传头像
-上传背景
-添加自己的的github图片链接
-更改网站<head>图标
-添加子网站jeremiah985.github.io/pictures.jeremiah985.github.io/
+- 添加网站描述和个人介绍
+- 上传头像
+- 上传背景
+- 添加自己的的github图片链接
+- 更改网站<head>图标
+- 添加子网站jeremiah985.github.io/pictures.jeremiah985.github.io/
 
