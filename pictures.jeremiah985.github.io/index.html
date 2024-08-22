@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pictures Subsite</title>
+    <title>jeremiah's pictures Website🥰</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to the Pictures Subsite</h1>
+        <h1>Welcome   !!!!!</h1>
     </header>
     <main>
-        <p>This is a subsite dedicated to pictures.</p>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/壁纸3.jpg"  alt="Image 1" class="slide-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/壁纸4.jpeg" alt="Image 2" class="slide-image">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/壁纸5.jpeg"  alt="Image 3"class="slide-image">
+            </div>
+            <!-- 添加更多图片时重复上面的结构 -->
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Jeremiah. All rights reserved.</p>
     </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // 切换时间为 3 秒
+        }
+    </script>
 </body>
 </html>
