@@ -31,4 +31,7 @@ git clone https://github.com/jeremiah985/jeremiah985.github.io
 - 添加自己的的github图片链接
 - 更改网站<head>图标
 - 添加子网站jeremiah985.github.io/pictures.jeremiah985.github.io/
-
+2024/8/22
+- 添加了音乐播放器
+- 更新了ssh密钥
+- 尝试使用vscode来进行网站更新，可能是网络原因导致报错
