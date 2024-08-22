@@ -24,14 +24,14 @@ git clone https://github.com/jeremiah985/jeremiah985.github.io
 - 解决方法：可能是因为把images中的文件全部上传了，但是我们的文件缓冲区又没有这么大，所以上传失败了。删除掉一些大的图片文件就好了，也给个提示，不要在工程文件夹或者说必要文件夹中上传不必要的文件
 
 ## 网站更新维护记录：
-2024/7/17
+#### 2024/7/17
 - 添加网站描述和个人介绍
 - 上传头像
 - 上传背景
 - 添加自己的的github图片链接
 - 更改网站<head>图标
-- 添加子网站jeremiah985.github.io/pictures.jeremiah985.github.io/
-2024/8/22
+- 添加子网站jeremiah985.github.io/pictures.jeremiah985.github.io/ 
+#### 2024/8/22
 - 添加了音乐播放器
 - 更新了ssh密钥
 - 尝试使用vscode来进行网站更新，可能是网络原因导致报错
