@@ -35,3 +35,7 @@ git clone https://github.com/jeremiah985/jeremiah985.github.io
 - 添加了音乐播放器
 - 更新了ssh密钥
 - 尝试使用vscode来进行网站更新，可能是网络原因导致报错
+
+#### 2024/12/9
+- 尝试使用djanggo架构来搭建个人博客系统（一次崭新的提升）
+  
