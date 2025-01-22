@@ -3,23 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Blog</title>
-    <link rel="stylesheet" href="../styles/style.css"> <!-- 链接到全局样式文件 -->
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Technical Blog</h1>
+        <h1>My Blog</h1>
         <nav>
             <a href="../index.html">Home</a>
-            <a href="../music/index.html">Music</a>
         </nav>
     </header>
     <main>
-        <p>Here you will find all my technical blogs and notes!</p>
-        <!-- 您可以在此添加动态加载博客内容的代码 -->
+        <section id="blog-form">
+            <h2>Create or Edit a Blog Post</h2>
+            <form id="blogPostForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                <label for="content">Content:</label>
+                <textarea id="content" rows="5" required></textarea>
+                <button type="submit">Save Post</button>
+            </form>
+        </section>
+
+        <section id="blog-list">
+            <h2>Blog Posts</h2>
+            <ul id="postsContainer"></ul>
+        </section>
     </main>
     <footer>
-        <p>© 2025 Jeremiah's Blog</p>
+        <p>© 2025 Jeremiah985</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
