@@ -3,6 +3,11 @@ const BLOG_STORAGE_KEY = "blog_posts";
 
 // Load existing posts when the page loads
 document.addEventListener("DOMContentLoaded", () => {
+    // Hide loader after content is loaded
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+    }, 1000);
+
     loadPosts();
 });
 
@@ -22,10 +27,8 @@ document.getElementById("blogPostForm").addEventListener("submit", (e) => {
     const existingIndex = posts.findIndex((post) => post.title === title);
 
     if (existingIndex >= 0) {
-        // Update existing post
         posts[existingIndex].content = content;
     } else {
-        // Add new post
         posts.push({ title, content });
     }
 
@@ -48,8 +51,8 @@ function loadPosts() {
             <h3>${post.title}</h3>
             <p>${post.content}</p>
             <div class="card-actions">
-                <button onclick="deletePost(${index})">Delete</button>
-                <button onclick="editPost(${index})">Edit</button>
+                <button onclick="deletePost(${index})"><i class="fas fa-trash"></i> Delete</button>
+                <button onclick="editPost(${index})"><i class="fas fa-edit"></i> Edit</button>
             </div>
         `;
         postsContainer.appendChild(card);

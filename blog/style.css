@@ -1,21 +1,26 @@
 /* 全局样式 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background: rgba(0, 123, 255, 0.8);
     color: #fff;
     padding: 10px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    font-weight: 700;
 }
 
 main {
@@ -23,6 +28,10 @@ main {
 }
 
 form {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
     margin-bottom: 20px;
 }
 
@@ -35,6 +44,8 @@ input, textarea, button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 button {
@@ -42,13 +53,15 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
-/* 卡片布局样式 */
+/* 卡片布局 */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -58,11 +71,11 @@ button:hover {
 
 .card {
     background-color: #fff;
-    border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .card:hover {
@@ -102,4 +115,32 @@ button:hover {
 
 .card button:hover {
     background-color: #d9363e;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+/* 加载动画 */
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 999;
+    color: #333;
 }
