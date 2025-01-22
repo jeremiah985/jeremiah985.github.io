@@ -41,14 +41,18 @@ function loadPosts() {
 
     const posts = JSON.parse(localStorage.getItem(BLOG_STORAGE_KEY)) || [];
     posts.forEach((post, index) => {
-        const li = document.createElement("li");
-        li.innerHTML = `
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
             <h3>${post.title}</h3>
             <p>${post.content}</p>
-            <button onclick="deletePost(${index})">Delete</button>
-            <button onclick="editPost(${index})">Edit</button>
+            <div class="card-actions">
+                <button onclick="deletePost(${index})">Delete</button>
+                <button onclick="editPost(${index})">Edit</button>
+            </div>
         `;
-        postsContainer.appendChild(li);
+        postsContainer.appendChild(card);
     });
 }
 
